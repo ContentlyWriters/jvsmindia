@@ -1,0 +1,257 @@
+@tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+  @layer base {
+    :root {
+      --background: 0 0% 100%;
+      --foreground: 222.2 84% 4.9%;
+
+      --card: 0 0% 100%;
+      --card-foreground: 222.2 84% 4.9%;
+
+      --popover: 0 0% 100%;
+      --popover-foreground: 222.2 84% 4.9%;
+
+      --primary: 222.2 47.4% 11.2%;
+      --primary-foreground: 210 40% 98%;
+
+      --secondary: 210 40% 96.1%;
+      --secondary-foreground: 222.2 47.4% 11.2%;
+
+      --muted: 210 40% 96.1%;
+      --muted-foreground: 215.4 16.3% 46.9%;
+
+      --accent: 210 40% 96.1%;
+      --accent-foreground: 222.2 47.4% 11.2%;
+
+      --destructive: 0 84.2% 60.2%;
+      --destructive-foreground: 210 40% 98%;
+
+      --border: 214.3 31.8% 91.4%;
+      --input: 214.3 31.8% 91.4%;
+      --ring: 222.2 84% 4.9%;
+
+      --radius: 0.5rem;
+    }
+
+    .dark {
+      --background: 222.2 84% 4.9%;
+      --foreground: 210 40% 98%;
+
+      --card: 222.2 84% 4.9%;
+      --card-foreground: 210 40% 98%;
+
+      --popover: 222.2 84% 4.9%;
+      --popover-foreground: 210 40% 98%;
+
+      --primary: 210 40% 98%;
+      --primary-foreground: 222.2 47.4% 11.2%;
+
+      --secondary: 217.2 32.6% 17.5%;
+      --secondary-foreground: 210 40% 98%;
+
+      --muted: 217.2 32.6% 17.5%;
+      --muted-foreground: 215 20.2% 65.1%;
+
+      --accent: 217.2 32.6% 17.5%;
+      --accent-foreground: 210 40% 98%;
+
+      --destructive: 0 62.8% 30.6%;
+      --destructive-foreground: 210 40% 98%;
+
+      --border: 217.2 32.6% 17.5%;
+      --input: 217.2 32.6% 17.5%;
+      --ring: 212.7 26.8% 83.9%;
+    }
+  }
+
+  @layer base {
+    * {
+      @apply border-border;
+    }
+    body {
+      @apply bg-background text-foreground;
+    }
+  }
+
+  .menu-link:hover {
+    background-position: 0%;
+}
+.menu-block {
+    border: 2px solid #000000;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+    margin: 0;
+    line-height: 2em;
+    font-weight: 500;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+	padding: 6px 40px;
+	font-size: 16px;
+	color: #000000;
+	background: linear-gradient(to right, #cfcccd 50%, transparent 50%);
+	background-size: 200% 100%;
+	background-position: right bottom;
+	transition: all .5s ease-out;
+    -webkit-clip-path: polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px));
+    clip-path: polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px));
+}
+.menu-block:hover {
+  background-position: left bottom;
+}
+.menu-block:before {
+    content: "";
+    position: absolute;
+    background-color: #000000;
+    width: 60px;
+    height: 2px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 0;
+    right: -14px;
+}
+.menu-block:after {
+    content: "";
+    position: absolute;
+    background-color: #000000;
+    width: 60px;
+    height: 2px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    bottom: 0;
+    left: -14px;
+}
+
+
+
+.custom-bullet-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.custom-bullet-list li::before {
+  content: '';
+  display: inline-block;
+  width: 8px; 
+  height: 8px;
+  border: 2px solid rgb(0, 0, 0); 
+  border-radius: 50%;
+  background-color: rgba(253, 253, 253, 0); 
+  margin-right: 10px; 
+  position: relative;
+}
+
+.custom-bullet-list li {
+  position: relative;
+  padding-left: 1.5rem; /* Space for the custom bullet */
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+ 
+}
+
+html {
+  overflow-y: scroll;
+}
+
+@keyframes bounce-slow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.animate-bounce-slow {
+  animation: bounce-slow 1.5s infinite;
+}
+
+
+
+/* global.css ya tailwind.css me */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeUp {
+  animation: fadeUp 1s ease forwards;
+}
+
+.animate-fadeDown {
+  animation: fadeDown 1s ease forwards;
+}
+
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-fadeSlide {
+  animation: fadeSlide 0.5s ease forwards;
+}
+
+
+/* home banner */
+
+@keyframes beam {
+  0% { transform: translateX(-50%) rotate(12deg); }
+  100% { transform: translateX(50%) rotate(12deg); }
+}
+
+.animate-beam {
+  animation: beam 8s linear infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradientMove {
+  background-size: 200% 200%;
+  animation: gradientMove 15s ease infinite;
+}
+
+
+/*zoho*/
+
+@keyframes spin-slow {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 120s linear infinite;
+}
