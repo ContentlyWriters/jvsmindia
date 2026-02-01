@@ -22,7 +22,7 @@ export default function Footer() {
         {/* Left Section */}
         <div className="text-center md:text-left space-y-2">
           <p className="text-sm text-whie">&copy; {new Date().getFullYear()} jvsmindia.com. All Rights Reserved.</p>
-          <p className="text-xs text-whie">Disclaimer: All content is for informational purposes only.</p>
+          <p className="text-xs text-whie">Disclaimer: All services by JVSM & Associates are provided as per applicable professional and regulatory standards. Website content is for informational purposes only.</p>
           <p className="text-xs text-lack text-whie font-bold">Powered by  <a href="https://www.contentlywriters.com" target="_blank" className="text-[#5b6cf2] font-semibold">ContentlyWriters </a>  </p>
         </div>
 

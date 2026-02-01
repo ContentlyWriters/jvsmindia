@@ -3,11 +3,11 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 
 const slides = [
-  "Zoho Implementation Experts",
+  "Zoho Books and Analytic Experts",
   "Pro Startup Finance Experts",
   "Tech Savvy Tech Ready CA Firm",
-  "Accounting ERP Implementation Partner",
-  "Bookkeeping Services for Businesses",
+  "Accounting ERP implementation partner",
+  "we provide cloud-Based Bookkeeping & Accounting Automation Services",
 ];
 
 

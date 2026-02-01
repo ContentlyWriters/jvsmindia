@@ -5,10 +5,9 @@ import { useState } from "react";
 import { FaTimes } from "react-icons/fa";
 
 export default function ZohoPartnerSection() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
 
-  // Example file URL
-  const fileUrl = "file/zoho-page.html"; // Replace with your file URL (PDF, Word, image, HTML, etc.)
+
+  
 
   return (
     <section className="w-full py-24 bg-gray-50 relative overflow-hidden">
@@ -50,12 +49,13 @@ export default function ZohoPartnerSection() {
           </div>
 
           {/* 🔹 Preview Button */}
-          <button
-            onClick={() => setIsModalOpen(true)}
+          <a
+          href="/zoho"
+           
             className="px-6 py-3 bg-[#020035] text-white rounded-full shadow-lg hover:bg-black transition"
           >
-            Preview File
-          </button>
+            View Details
+          </a>
         </div>
 
         {/* Right Image */}
@@ -72,31 +72,7 @@ export default function ZohoPartnerSection() {
         </div>
       </div>
 
-      {/* 🔹 Modal */}
-      {isModalOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm">
-          <div className="relative w-full max-w-4xl mx-4 bg-white rounded-2xl shadow-2xl overflow-hidden">
-            
-            {/* Close Button */}
-            <button
-              onClick={() => setIsModalOpen(false)}
-              className="absolute top-4 right-4 text-gray-700 hover:text-red-600 text-2xl"
-            >
-              <FaTimes />
-            </button>
-
-            {/* File Preview Area */}
-            <div className="w-full h-[80vh]">
-              {/* PDF/Word/HTML/Image can go here */}
-              <iframe
-                src={fileUrl}
-                className="w-full h-full"
-                frameBorder="0"
-              ></iframe>
-            </div>
-          </div>
-        </div>
-      )}
+      
 
     </section>
   );

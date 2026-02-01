@@ -11,58 +11,61 @@ import { useState } from "react";
 
 
 const features = [
-  {
-    icon: TrendingUp,
-    title: "VIRTUAL CFO SERVICES",
-    desc: "Drive growth with financial reporting and MIS services including business plan development and projections. As your strategic partner, we manage banking relationships, accurate budgeting, risk assessment, and decision-making to scale your financial operations effectively.",
-    color: "from-indigo-600 to-blue-500",   // growth + trust
-  },
-  {
+   {
     icon: Cloud,
     title: "CLOUD BASED BOOKKEEPING SERVICES ",
-    desc: "We provide expert Zoho Books services and cloud accounting services to streamline your finances. Our team delivers accounting automation solutions and Zoho accounting automation, managing reconciliations, accounts receivable, and comprehensive payable management for businesses. ",
+    desc: "We deliver secure, cloud-based bookkeeping with automated accounting processes to ensure accurate records, real-time financial visibility, and streamlined compliance—so you can focus on growing your business.",
     color: "from-sky-500 to-cyan-500",   // cloud + tech
   },
-  {
+   {
     icon: Rocket,
     title: "STARTUP SETUP AND CONSULTANCY",
-    desc: "Navigate early-stage hurdles with our offshore accounting services and startup consultancy. We handle entity formation, DPIIT registration, and license acquisition, while providing expert advice on deal structuring and the implementation of strategic ESOP frameworks. ",
+    desc: "We support startups from day one with entity formation, DPIIT registration, statutory license registrations, and expert consultancy on deal structuring and ESOPs.",
     color: "from-violet-600 to-indigo-500",   // growth acceleration
   },
   {
+    icon: TrendingUp,
+    title: "VIRTUAL CFO SERVICES",
+    desc: "Our Virtual CFO services provide strategic financial leadership to help your business grow with confidence. We assist with business plan development, accurate budgeting and financial projections, investor and MIS reporting, banking relationships, CMA data preparation, and regulatory liaison. With expert guidance in decision-making, risk assessment, accounting oversight, and team management, we act as your trusted financial partner.",
+    color: "from-indigo-600 to-blue-500",   // growth + trust
+  },
+ 
+ 
+  {
     icon: Scale,
     title: "TAX AND REGULATORY SERVICES ",
-    desc: "Our GST & accounting compliance services cover corporate and individual taxation. We offer robust tax representation and litigation support, ensuring seamless management of Professional Tax, PF, and ESIC while maintaining full regulatory alignment.",
+    desc: "We provide end-to-end tax and regulatory support covering corporate and individual taxation, GST, PF, ESIC, FEMA compliance, and tax representation with litigation support.",
     color: "from-emerald-600 to-green-500",   // money + balance
+  },
+   {
+    icon: Users,
+    title: "Payroll Services",
+    desc: "Remote bookkeeping and accounting services for overseas businesses, ensuring accuracy and efficiency. We manage tax-efficient salary structures, process employee salaries and deductions, and ensure full compliance with local payroll regulations.",
+    color: "bg-emerald-600",
   },
   {
     icon: ClipboardCheck,
     title: "AUDIT AND ASSURANCE SERVICES ",
-    desc: "Ensure transparency with our statutory compliance management services. We provide comprehensive Statutory, Internal, and GST audits. Our operational and management audit services guarantee that your business maintains the highest standards of financial integrity.",
+    desc: "We provide independent and reliable audit services including statutory audit, internal audit, GST audit, operational audit, and management audit to ensure compliance and strengthen governance.",
     color: "from-amber-500 to-yellow-500",   // support + attention
   },
   {
     icon: SearchCheck,
     title: "DUE DILIGENCE SERVICES",
-    desc: "We offer an in-depth analysis of financial health to facilitate efficient decision-making. Our offshore accounting services experts review performance and position, ensuring that every investment or partnership is backed by an informed, accurate judgment. ",
+    desc: "we Provide comprehensive financial due diligence  service to assess a company’s performance and financial position, helping stakeholders make confident, well-informed decisions.",
     color: "from-slate-600 to-gray-500",   // reliability + trust
   },
    {
     icon: Landmark,
     title: "SME Financing & Fundraising",
-    desc: "Secure your future with strategic advice on bank loans and supply chain financing. We act as your Accounting ERP implementation partner to optimize cash flow and profitability while assessing specific funding requirements for SMEs.",
+    desc: "Helping SMEs raise capital and access the right financing solutions, with expert guidance on cash flow, working capital, and financial strategy to drive growth.",
     color: "bg-indigo-600",
   },
-  {
-    icon: Users,
-    title: "Payroll Services",
-    desc: "Optimize your workforce management with tax-efficient salary structures and precise processing. We ensure strict compliance with local laws, handling all employee deductions and taxes as part of our integrated accounting automation solutions for payroll.",
-    color: "bg-emerald-600",
-  },
+ 
   {
     icon: FileCheck,
     title: "Secretarial Services",
-    desc: "Stay compliant with our ROC & MCA compliance services and company secretarial services. We handle all MCA filings and the drafting of critical legal agreements, including Term Sheets, SHA/SSA, and ESOP implementation for your entity.",
+    desc: "We manage MCA compliances and draft key agreements, including Term Sheets, SHA/SSA, DSA, and ESOP/ESAR implementation",
     color: "bg-slate-700",
   },
 ];
