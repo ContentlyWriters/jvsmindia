@@ -40,12 +40,45 @@ function useCountUp(end, duration = 2000) {
   return [count, ref];
 }
 
+
 const stats = [
   { value: 90, suffix: "%", label: "Error Reduction" },
   { value: 85, suffix: "x", label: "Faster Processing" },
- { value: [6, 12], suffix: "", label: "Months to ROI", range: true },
+  { value: [6, 12], suffix: "", label: "Months to ROI", range: true },
   { value: 98, suffix: "%", label: "CFO Adoption" },
 ];
+
+function StatCard({ item }) {
+  const [count, ref] = useCountUp(
+    item.range ? item.value[1] : item.value,
+    2000
+  );
+
+  return (
+    <div
+      ref={ref}
+      className="group relative bg-white rounded-2xl p-10 border border-slate-200 shadow-[0_10px_30px_rgba(0,0,0,0.05)] hover:shadow-[0_20px_50px_rgba(0,0,0,0.1)] transition-all duration-300 text-center"
+    >
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-12 h-1 bg-green-700 rounded-full group-hover:w-20 transition-all"></div>
+
+      <h3 className="text-5xl font-extrabold text-slate-900 mt-6 group-hover:text-green-700 transition">
+        {item.range ? (
+          <>
+            {Math.floor(count / 2)}–{count}
+          </>
+        ) : (
+          <>
+            {count}{item.suffix}
+          </>
+        )}
+      </h3>
+
+      <p className="mt-4 text-slate-600 font-medium tracking-wide">
+        {item.label}
+      </p>
+    </div>
+  );
+}
 
 export default function JVSMConsulting() {
   return (
@@ -190,43 +223,14 @@ export default function JVSMConsulting() {
   </div>
 
   {/* Stats Grid */}
- <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 max-w-6xl mx-auto relative z-10">
-  {stats.map((item, i) => {
-    const [count, ref] = useCountUp(
-      item.range ? item.value[1] : item.value,
-      2000
-    );
-
-    return (
-      <div
-        key={i}
-        ref={ref}
-        className="group relative bg-white rounded-2xl p-10 border border-slate-200 shadow-[0_10px_30px_rgba(0,0,0,0.05)] hover:shadow-[0_20px_50px_rgba(0,0,0,0.1)] transition-all duration-300 text-center"
-      >
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-12 h-1 bg-green-700 rounded-full group-hover:w-20 transition-all"></div>
-
-        <h3 className="text-5xl font-extrabold text-slate-900 mt-6 group-hover:text-green-700 transition">
-          {item.range ? (
-            <>
-              {Math.floor(count / 2)}–{count}
-            </>
-          ) : (
-            <>
-              {count}{item.suffix}
-            </>
-          )}
-        </h3>
-
-        <p className="mt-4 text-slate-600 font-medium tracking-wide">
-          {item.label}
-        </p>
-      </div>
-    );
-  })}
+<div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 max-w-6xl mx-auto relative z-10">
+  {stats.map((item) => (
+    <StatCard key={item.label} item={item} />
+  ))}
+</div>
 
 
-
-  </div>
+ 
 </section>
 
 
