@@ -42,7 +42,7 @@ export default function BlogNotification() {
       <div className="
         relative
         backdrop-blur-2xl
-        bg-white/75
+        bg-white/85
         border border-white/50
         text-gray-900
         p-4 sm:p-5

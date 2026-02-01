@@ -52,7 +52,7 @@ const features = [
   {
     icon: SearchCheck,
     title: "DUE DILIGENCE SERVICES",
-    desc: "we Provide comprehensive financial due diligence  service to assess a company’s performance and financial position, helping stakeholders make confident, well-informed decisions.",
+    desc: "We provide comprehensive financial due diligence  service to assess a company’s performance and financial position, helping stakeholders make confident, well-informed decisions.",
     color: "from-slate-600 to-gray-500",   // reliability + trust
   },
    {
@@ -65,7 +65,7 @@ const features = [
   {
     icon: FileCheck,
     title: "Secretarial Services",
-    desc: "We manage MCA compliances and draft key agreements, including Term Sheets, SHA/SSA, DSA, and ESOP/ESAR implementation",
+    desc: "We manage MCA compliances and draft key agreements, including Term Sheets, SHA/SSA, DSA, and ESOP/ESAR implementation.",
     color: "bg-slate-700",
   },
 ];

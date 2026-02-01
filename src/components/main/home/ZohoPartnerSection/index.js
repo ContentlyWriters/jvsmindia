@@ -25,7 +25,7 @@ export default function ZohoPartnerSection() {
           </p>
 
           <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 leading-snug mb-6">
-            We Are an Authorized Zoho Books Partner
+            We Are an <span className="text-[#CE2232]">Authorized</span> <span className="text-[#219E4A]">Zoho</span> <span className="text-[#0974B0]">Books</span> <span className="text-[#FFE004]">Partner</span>
           </h2>
 
           <p className="text-gray-700 text-lg leading-relaxed mb-6">

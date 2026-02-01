@@ -120,7 +120,7 @@ export default function JVSMConsulting() {
   {/* 🌟 Hero Content */}
   <div className="relative z-10 max-w-5xl mx-auto">
     <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight drop-shadow-lg">
-      JVSM & ASSOCIATE
+      JVSM & ASSOCIATES
     </h1>
     <p className="mt-6 text-xl md:text-2xl text-white/80 drop-shadow-sm">
       Transforming Financial Operations with Intelligent ERP Solutions
@@ -371,7 +371,7 @@ export default function JVSMConsulting() {
   {/* Heading */}
   <div className="text-center max-w-3xl mx-auto mb-20">
     <h2 className="text-4xl md:text-5xl text-black font-extrabold text-center mb-20">
-      Why Choose JVSM & Associate
+      Why Choose JVSM & Associates?
     </h2>
   
   </div>
@@ -457,7 +457,7 @@ export default function JVSMConsulting() {
 
         <div>
           <h2 className="text-3xl font-bold text-slate-900 tracking-tight mb-2">
-            JVSM & ASSOCIATE
+            JVSM & ASSOCIATES
           </h2>
 
        
