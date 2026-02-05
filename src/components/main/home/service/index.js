@@ -1,6 +1,6 @@
 "use client";
 
-
+import {  useEffect } from "react";
 import { motion } from "framer-motion";
 import {
   TrendingUp, Cloud, Rocket, Scale,
@@ -10,20 +10,23 @@ import {
 import { useState } from "react";
 
 
+
+
 const features = [
-   {
+   { id:1,
     icon: Cloud,
     title: "CLOUD BASED BOOKKEEPING SERVICES ",
     desc: "We deliver secure, cloud-based bookkeeping with automated accounting processes to ensure accurate records, real-time financial visibility, and streamlined compliance—so you can focus on growing your business.",
     color: "from-sky-500 to-cyan-500",   // cloud + tech
   },
    {
+    id:2,
     icon: Rocket,
     title: "STARTUP SETUP AND CONSULTANCY",
     desc: "We support startups from day one with entity formation, DPIIT registration, statutory license registrations, and expert consultancy on deal structuring and ESOPs.",
     color: "from-violet-600 to-indigo-500",   // growth acceleration
   },
-  {
+  { id:3,
     icon: TrendingUp,
     title: "VIRTUAL CFO SERVICES",
     desc: "Our Virtual CFO services provide strategic financial leadership to help your business grow with confidence. We assist with business plan development, accurate budgeting and financial projections, investor and MIS reporting, banking relationships, CMA data preparation, and regulatory liaison. With expert guidance in decision-making, risk assessment, accounting oversight, and team management, we act as your trusted financial partner.",
@@ -31,38 +34,38 @@ const features = [
   },
  
  
-  {
+  { id:4,
     icon: Scale,
     title: "TAX AND REGULATORY SERVICES ",
     desc: "We provide end-to-end tax and regulatory support covering corporate and individual taxation, GST, PF, ESIC, FEMA compliance, and tax representation with litigation support.",
     color: "from-emerald-600 to-green-500",   // money + balance
   },
-   {
+   {id:5,
     icon: Users,
     title: "Payroll Services",
     desc: "Remote bookkeeping and accounting services for overseas businesses, ensuring accuracy and efficiency. We manage tax-efficient salary structures, process employee salaries and deductions, and ensure full compliance with local payroll regulations.",
     color: "bg-emerald-600",
   },
-  {
+  { id:6,
     icon: ClipboardCheck,
     title: "AUDIT AND ASSURANCE SERVICES ",
     desc: "We provide independent and reliable audit services including statutory audit, internal audit, GST audit, operational audit, and management audit to ensure compliance and strengthen governance.",
     color: "from-amber-500 to-yellow-500",   // support + attention
   },
-  {
+  { id:7,
     icon: SearchCheck,
     title: "DUE DILIGENCE SERVICES",
     desc: "We provide comprehensive financial due diligence  service to assess a company’s performance and financial position, helping stakeholders make confident, well-informed decisions.",
     color: "from-slate-600 to-gray-500",   // reliability + trust
   },
-   {
+   { id:8,
     icon: Landmark,
     title: "SME Financing & Fundraising",
     desc: "Helping SMEs raise capital and access the right financing solutions, with expert guidance on cash flow, working capital, and financial strategy to drive growth.",
     color: "bg-indigo-600",
   },
  
-  {
+  { id:9,
     icon: FileCheck,
     title: "Secretarial Services",
     desc: "We manage MCA compliances and draft key agreements, including Term Sheets, SHA/SSA, DSA, and ESOP/ESAR implementation.",
@@ -71,10 +74,36 @@ const features = [
 ];
 
 export default function ExpertiseShowcase() {
+  useEffect(() => {
+  const handleHash = () => {
+    const hash = window.location.hash; // #service-3
+    if (!hash.startsWith("#service-")) return;
+
+    const el = document.querySelector(hash);
+    if (!el) return;
+
+    // Navbar height adjust
+    const yOffset = -110;
+    const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+    window.scrollTo({ top: y, behavior: "smooth" });
+
+    // Glow active card
+    const id = Number(hash.replace("#service-", ""));
+    setActive(id - 1);
+  };
+
+  handleHash(); // page load
+  window.addEventListener("hashchange", handleHash); // dropdown click
+
+  return () => window.removeEventListener("hashchange", handleHash);
+}, []);
+
+
   const [active, setActive] = useState(null);
 
   return (
-    <section id="services" className=" relative overflow-hidden bg-gray-50 text-black py-28 px-6 md:px-12">
+    <section id="services" className=" relative overflow-hidden bg-gray-50 text-black py-18 px-6 md:px-12">
       
      <div className="absolute top-0 left-1/4 w-[400px] h-[400px] rounded-full bg-green-200/20 blur-[120px] pointer-events-none" />
       <div className="absolute bottom-0 right-1/3 w-[350px] h-[350px] rounded-full bg-indigo-200/20 blur-[100px] pointer-events-none" />
@@ -100,6 +129,7 @@ export default function ExpertiseShowcase() {
 
             return (
               <motion.div
+                 id={`service-${feature.id}`}
                 key={index}
                 onMouseEnter={() => setActive(index)}
                 onMouseLeave={() => setActive(null)}

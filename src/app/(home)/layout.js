@@ -8,11 +8,11 @@ import BlogNotification from "@/components/main/BlogNotification";
 
 
 export const metadata = {
-  title: "Best Content Writing & SEO Services USA | Contently Writers",
-  description: `Looking for the best content writing and SEO services in the USA? 
-Contently Writers delivers high-quality content and SEO strategies to 
-help your brand grow online.`,
-  keywords: "content writing company, best content writing company ,content writing agency, content creation services, best SEO companies in USA, best USA SEO company, SEO company in USA, search engine optimization company USA, search engine optimization companies in USA, affordable search engine optimization service, low price SEO services, Best Content writing services, Best Assignment services , Assignment helper , Assignment experts , safeassign , UK , USA",
+  title: " Expert Accounting ERP Implementation Partner | JVSM & India",
+  description: ` Stop managing messy books. As your Accounting ERP 
+implementation partner, JVSM automates your finance with Zoho Books and FEMA 
+compliance services in India.`,
+   keywords: "Accounting ERP implementation partner, FEMA compliance services India, Zoho Analytics consulting services, Bookkeeping services for businesses, Accounting automation solutions, Company secretarial services, GST & accounting compliance services",
   alternates: {
     canonical: "https://www.jvsmindia.com",
   },

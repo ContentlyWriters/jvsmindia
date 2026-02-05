@@ -2,7 +2,7 @@
 
 export default function ZohoPresence() {
   return (
-    <section className="relative w-full py-32 px-6 text-black overflow-hidden bg-gray-50">
+    <section className="relative w-full py-19 pb-4 px-6 text-black overflow-hidden bg-gray-50">
 
       {/* Background Light Glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-indigo-500/10 blur-[140px] -z-10"></div>

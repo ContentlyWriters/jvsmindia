@@ -6,6 +6,7 @@
 Allow: /
 Allow: /blog/
 Allow: /contact
+Allow: /zoho
 
 # Disallow access to potentially private sections
 

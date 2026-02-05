@@ -25,7 +25,7 @@ export default function IndustriesSection() {
         <h2 className="text-4xl md:text-5xl font-bold mb-6 text-black">
           Industries In Our Portfolio
         </h2>
-        <p className="text-gray-700 tracking-[4px] text-sm mb-3 uppercase">
+        <p className="text-gray-700 tracking-[4px] font-bold text-sm mb-3 uppercase">
           We serve diverse industries with tailor-made solutions for maximum impact.
         </p>
 

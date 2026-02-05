@@ -3,14 +3,15 @@ export async function generateSitemap() {
   const baseUrl = "https://www.jvsmindia.com";
   
   const staticUrls = [
-    { loc: "/", lastmod: "2024-11-26", priority: 1.0 },
-    { loc: "/#aboutus", lastmod: "2024-11-26", priority: 0.8 },
-    { loc: "/contact", lastmod: "2024-11-26", priority: 0.8 },
-    { loc: "/#services", lastmod: "2024-11-26", priority: 0.8 },
+    { loc: "/", lastmod: "2026-02-05", priority: 1.0 },
+    { loc: "/#aboutus", lastmod: "2026-02-05", priority: 0.8 },
+    { loc: "/contact", lastmod: "2026-02-05", priority: 0.8 },
+    { loc: "/#services", lastmod: "2026-02-05", priority: 0.8 },
+     { loc: "/zoho", lastmod: "2026-02-05", priority: 0.8 },
   ];
 
   const dynamicUrls = [
-    { loc: "/blog", lastmod: "2024-11-26", priority: 0.8 },
+    { loc: "/blog", lastmod: "2026-02-05", priority: 0.8 },
    
   ];
 

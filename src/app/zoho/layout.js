@@ -8,13 +8,13 @@ import Footer from "@/components/main/footer";
 
 
 export const metadata = {
-  title: "Best Content Writing & SEO Services USA | Contently Writers",
-  description: `Looking for the best content writing and SEO services in the USA? 
-Contently Writers delivers high-quality content and SEO strategies to 
-help your brand grow online.`,
-  keywords: "content writing company, best content writing company ,content writing agency, content creation services, best SEO companies in USA, best USA SEO company, SEO company in USA, search engine optimization company USA, search engine optimization companies in USA, affordable search engine optimization service, low price SEO services, Best Content writing services, Best Assignment services , Assignment helper , Assignment experts , safeassign , UK , USA",
+  title: "Stop Manual Data Entry | Authorized Zoho Books CA Experts",
+  description: `Stop drowning in spreadsheets. We provide expert Zoho Analytics 
+consulting services and accounting automation solutions to turn your data into 
+growth.`,
+  keywords: "Accounting ERP implementation partner, Zoho Analytics consulting services, Offshore accounting services, Zoho Books services, Accounting automation solutions",
   alternates: {
-    canonical: "https://www.jvsmindia.com",
+    canonical: "https://www.jvsmindia.com/zoho",
   },
 };
 

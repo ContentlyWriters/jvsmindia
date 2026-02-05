@@ -3,11 +3,12 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 
 const slides = [
-  "Zoho Books and Analytic Experts",
+  "Zoho Books and Analytics Experts",
   "Pro Startup Finance Experts",
   "Tech Savvy Tech Ready CA Firm",
   "Accounting ERP implementation partner",
-  "we provide cloud-Based Bookkeeping & Accounting Automation Services",
+  "cloud-Based Bookkeeping Service Provider",
+  "Accounting Automation Service Provider",
 ];
 
 
@@ -34,7 +35,7 @@ export default function HeroSlider() {
       {/* Content */}
       <div className="relative z-10 text-center px-6 w-full max-w-5xl flex flex-col items-center">
 
-        <p className="uppercase tracking-[0.35em] text-xs sm:text-sm text-white/60 mb-3">
+        <p className="uppercase font-bold tracking-[0.35em] text-xs sm:text-sm text-white/60 mb-3">
           We are JVSM & Associates
         </p>
 

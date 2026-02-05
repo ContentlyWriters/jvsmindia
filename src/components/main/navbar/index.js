@@ -8,12 +8,30 @@ import SmallNavbar from "./small-navbar";
 
 const items = [
   { id: 1, name: "Home", path: "/" },
-  { id: 2, name: "Services", path: "/#services" },
+
+  {
+    id: 2,
+    name: "Services",
+    dropdown: [
+      { name: "Cloud Based Bookkeeping Services", path: "/#service-1" },
+      { name: "Startup Setup & Consultancy", path: "/#service-2" },
+      { name: "Virtual CFO Services", path: "/#service-3" },
+      { name: "TAX & Regulatory Services", path: "/#service-4" },
+      { name: "Payroll Services", path: "/#service-5" },
+      { name: "Audit & Assurance Services", path: "/#service-6" },
+      { name: "Due Diligence Services", path: "/#service-7" },
+      { name: "SME Financing & Fundraising", path: "/#service-8" },
+      { name: "Secretarial Services", path: "/#service-9" },
+    ],
+  },
+
   { id: 3, name: "About Us", path: "/#aboutus" },
   { id: 4, name: "Industries", path: "/#Industries" },
   { id: 5, name: "Blog", path: "/blog" },
   { id: 6, name: "Contact", path: "/contact" },
 ];
+
+
 
 export default function NavBar() {
   const [isScrolled, setIsScrolled] = useState(false);

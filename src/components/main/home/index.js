@@ -3,7 +3,7 @@ import React from "react";
 import ZohoPartnerSection from "./ZohoPartnerSection";
 import Portfolio from "./Portfolio";
 import AboutUs from "./aboutUs";
-import Testimonials from "./testimonials";
+// import Testimonials from "./testimonials";
 import Zoho from "./zoho"
 import Service from "./service"
 import Banner from "./banner";
@@ -19,7 +19,7 @@ export default function HomeScreen() {
       <Portfolio />
       <Zoho />
       <AboutUs/>
-      <Testimonials />
+      {/* <Testimonials /> */}
      
     </>
   );

@@ -5,7 +5,10 @@ import Footer from "@/components/main/footer";
 
 export const metadata = {
   title:
-    "Blog | jvsmindia"
+    "Expert Finance Insights: Zoho, GST & Compliance | JVSM",
+     description:` Master your finances with our latest guides on Zoho Books services, 
+GST & accounting compliance, and offshore accounting services. Professional advice 
+made simple.`
 };
 export default function BlogLayout({ children }) {
 

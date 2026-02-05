@@ -7,10 +7,10 @@ import Footer from "@/components/main/footer";
 
 export const metadata = {
   title:
-    "Contact Contently Writers: Get in Touch with Us",
-  description:'Reach out to Contently Writers for professional writing services. Contact us via phone, email, or our online form for inquiries and support. Ask us anything, we’re here to help you with your content needs.',
+    "Stop Stressing Over Taxes | Start Your Automation Journey",
+  description:'Tired of messy books? Let’s talk about Accounting automation solutions and ROC & MCA compliance services. Your shortcut to a stress-free business starts here.',
   alternates: {
-    canonical: "https://www.contentlywriters.com/contact"
+    canonical: "https://www.jvsmindia.com/contact"
   }
 };
 export default function ContactLayout({ children }) {

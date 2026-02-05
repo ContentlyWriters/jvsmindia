@@ -4,111 +4,80 @@ import { Mail, Phone, Linkedin } from "lucide-react";
 
 export default function FoundersSection() {
   return (
-    <section id="aboutus" className="bg-gray-50 text-gray-900 py-24 px-6">
-      <div className="text-center mb-20">
+    <section id="aboutus" className="bg-gray-50 text-gray-900 py-20 px-6">
+      
+      {/* Heading */}
+      <div className="text-center mb-16">
         <p className="text-green-700 tracking-[4px] text-sm mb-3 uppercase">
           About Us
         </p>
         <h2 className="text-5xl font-bold">Meet Our Founders</h2>
       </div>
 
-      <div className="max-w-6xl mx-auto space-y-28">
+      {/* Grid */}
+      <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-10">
 
- {/* ================= FOUNDER 1 ================= */}
+        {/* Founder Card */}
+        {[
+           {
+            name: "CA Vikas Jain",
+            role: "Chartered Accountant",
+            img: "/founders/vikash_jain.png",
+            email: "vikas.jain@jvsmindia.com",
+            phone: "+91 95499 64985",
+            linkedin: "https://www.linkedin.com/in/ca-vikas-jain-15a19947/",
+          },
 
-        <div className=" flex flex-col md:flex-row items-center md:items-start gap-10">
-          <div className="md:w-[48%]">
-            <div className="border border-gray-300 shadow-lg bg-white">
+          {
+            name: "CA Vivek Sharma",
+            role: "Chartered Accountant",
+            img: "/founders/vivek_jain.png",
+            email: "vivek.sharma@jvsmindia.com",
+            phone: "+91 73000 69605",
+            linkedin: "https://www.linkedin.com/in/vivek-sharma-462012194",
+          },
+         
+          {
+            name: "CA Manish Pamnani",
+            role: "Chartered Accountant",
+            img: "/founders/manish_Pawnami.png",
+            email: "manish.pamnani@jvsmindia.com",
+            phone: "+91 99876 54321",
+            linkedin: "https://www.linkedin.com/in/manish-pamnani-77b867b3",
+          },
+        ].map((f, i) => (
+          <div
+            key={i}
+            className="bg-white border border-gray-200 rounded-2xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden"
+          >
+            {/* Image */}
+            <div className="bg-gray-100">
               <img
-                src="/founders/vivek_jain.png"
-                alt="CA Vivek Sharma"
-                className="w-full h-[520px] object-contain"
+                src={f.img}
+                alt={f.name}
+                className="w-full h-[420px] object-fill"
               />
             </div>
-          </div>
 
-          <div className="md:w-[42%] pt-4">
-            <h3 className="text-3xl font-bold mb-2">CA Vivek Sharma</h3>
-            <p className="text-gray-600 mb-6">Chartered Accountant</p>
+            {/* Info */}
+            <div className="p-6 text-left">
+              <h3 className="text-2xl font-bold">{f.name}</h3>
+              <p className="text-gray-600 mb-4">{f.role}</p>
 
-            <div className="space-y-4 text-gray-700">
-              <a href="mailto:vivek.sharma@jvsmindia.com" className="flex items-center gap-3 hover:text-black">
-                <Mail size={18} /> vivek.sharma@jvsmindia.com
-              </a>
-              <a href="tel:+919876543211" className="flex items-center gap-3 hover:text-black">
-                <Phone size={18} /> +91 73000 69605
-              </a>
-              <a href="https://www.linkedin.com/in/vivek-sharma-462012194" target="_blank" className="flex items-center gap-3 hover:text-black">
-                <Linkedin size={18} /> LinkedIn Profile
-              </a>
+              <div className="space-y-2  text-sm text-gray-700">
+                <a href={`mailto:${f.email}`} className="flex items-left justify-left gap-2 hover:text-black">
+                  <Mail size={16} /> {f.email}
+                </a>
+                <a href={`tel:${f.phone}`} className="flex items-left justify-left gap-2 hover:text-black">
+                  <Phone size={16} /> {f.phone}
+                </a>
+                <a href={f.linkedin} target="_blank" className="flex items-left justify-left gap-2 hover:text-black">
+                  <Linkedin size={16} /> LinkedIn
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-
-
-        {/* ================= FOUNDER 2 ================= */}
-        <div className="flex flex-col md:flex-row-reverse items-center md:items-start gap-10">
-          <div className="md:w-[48%]">
-            <div className="border border-gray-300 shadow-lg bg-white">
-              <img
-                src="/founders/vikash_jain.png"
-                alt="CA Vikas Jain"
-                className="w-full h-[520px] object-contain"
-              />
-            </div>
-          </div>
-
-          <div className="md:w-[19%] pt-4">
-            <h3 className="text-3xl font-bold mb-2">CA Vikas Jain</h3>
-            <p className="text-gray-600 mb-6">Chartered Accountant</p>
-
-            <div className="space-y-4 text-gray-700">
-              <a href="mailto:vikas.jain@jvsmindia.com" className="flex items-center gap-3 hover:text-black">
-                <Mail size={18} /> vikas.jain@jvsmindia.com
-              </a>
-              <a href="tel:+919876543210" className="flex items-center gap-3 hover:text-black">
-                <Phone size={18} /> +91 95499 64985
-              </a>
-              <a href="https://www.linkedin.com/in/ca-vikas-jain-15a19947/" target="_blank" className="flex items-center gap-3 hover:text-black">
-                <Linkedin size={18} /> LinkedIn Profile
-              </a>
-            </div>
-          </div>
-        </div>
-
-       
-        {/* ================= FOUNDER 3 ================= */}
-        <div className="flex flex-col md:flex-row items-center md:items-start gap-10">
-          {/* IMAGE */}
-          <div className="md:w-[50%]">
-            <div className="border border-gray-300 shadow-lg bg-white">
-              <img
-                src="/founders/manish_Pawnami.png"
-                alt="CA Manish Pawnami"
-                className="w-full h-[550px] object-contain rounded-md"
-              />
-            </div>
-          </div>
-
-          {/* INFO */}
-          <div className="md:w-[42%] pt-4">
-            <h3 className="text-3xl font-bold mb-2">CA Manish Pamnani</h3>
-            <p className="text-gray-600 mb-6">Chartered Accountant</p>
-
-            <div className="space-y-4 text-gray-700">
-              <a href="mailto:manish.pamnani@jvsmindia.com" className="flex items-center gap-3 hover:text-black">
-                <Mail size={18} /> manish.pamnani@jvsmindia.com
-              </a>
-              <a href="tel:+919876543212" className="flex items-center gap-3 hover:text-black">
-                <Phone size={18} /> +91 99876 54321
-              </a>
-              <a href="https://www.linkedin.com/in/manish-pamnani-77b867b3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" className="flex items-center gap-3 hover:text-black">
-                <Linkedin size={18} /> LinkedIn Profile
-              </a>
-            </div>
-          </div>
-        </div>
-
+        ))}
       </div>
     </section>
   );

@@ -56,6 +56,7 @@ export default function ContactSection() {
   };
 
   return (
+    <>
     <section className="relative bg-gradient-to-br from-[#f9fbff] via-white to-[#eef1ff] overflow-hidden">
 
       {/* Decorative Blobs */}
@@ -73,110 +74,116 @@ export default function ContactSection() {
       </div>
 
       {/* CONTACT CONTAINER */}
-      <div className="max-w-6xl mx-auto -mt-32 mb-24 relative z-20">
-        <div className="grid md:grid-cols-2 rounded-3xl shadow-[0_40px_100px_rgba(0,0,0,0.12)] overflow-hidden backdrop-blur-xl">
+    {/* CONTACT CONTAINER */}
+<div className="max-w-6xl mx-auto -mt-32 mb-24 relative z-20">
+  <div className="grid md:grid-cols-2 rounded-3xl shadow-[0_40px_100px_rgba(0,0,0,0.12)] overflow-hidden">
 
-          {/* FORM SIDE */}
-          <div className="bg-white p-12 md:p-16">
-            <h2 className="text-2xl font-semibold text-[#020035] mb-10">
-              Send a Message
-            </h2>
+    {/* ================= FORM SIDE ================= */}
+    <div className="bg-white p-12 md:p-16">
+      <h2 className="text-2xl font-semibold text-[#020035] mb-10">
+        Send a Message
+      </h2>
 
-            <form onSubmit={handleSubmit} className="space-y-7">
+      <form onSubmit={handleSubmit} className="space-y-7">
+        <div className="grid md:grid-cols-2 gap-6">
+          <input name="name" value={form.name} onChange={handleChange} required placeholder="Your Name"
+            className="w-full px-4 py-3 rounded-lg bg-[#f5f7ff] focus:bg-white border border-transparent focus:border-black outline-none transition" />
+          <input name="email" type="email" value={form.email} onChange={handleChange} required placeholder="Email Address"
+            className="w-full px-4 py-3 rounded-lg bg-[#f5f7ff] focus:bg-white border border-transparent focus:border-black outline-none transition" />
+        </div>
 
-              <div className="grid md:grid-cols-2 gap-6">
-                <input name="name" value={form.name} onChange={handleChange} required placeholder="Your Name"
-                  className="w-full px-4 py-3 rounded-lg bg-[#f5f7ff] focus:bg-white border border-transparent focus:border-black outline-none transition" />
+        <input name="subject" value={form.subject} onChange={handleChange} placeholder="Subject"
+          className="w-full px-4 py-3 rounded-lg bg-[#f5f7ff] focus:bg-white border border-transparent focus:border-black outline-none transition" />
 
-                <input name="email" type="email" value={form.email} onChange={handleChange} required placeholder="Email Address"
-                  className="w-full px-4 py-3 rounded-lg bg-[#f5f7ff] focus:bg-white border border-transparent focus:border-black outline-none transition" />
-              </div>
+        <textarea name="message" rows="5" value={form.message} onChange={handleChange} required placeholder="Your Message"
+          className="w-full px-4 py-3 rounded-lg bg-[#f5f7ff] focus:bg-white border border-transparent focus:border-black outline-none transition" />
 
-              <input name="subject" value={form.subject} onChange={handleChange} placeholder="Subject"
-                className="w-full px-4 py-3 rounded-lg bg-[#f5f7ff] focus:bg-white border border-transparent focus:border-black outline-none transition" />
+        <button
+          type="submit"
+          disabled={loading}
+          className={`w-full py-4 rounded-xl text-white text-lg transition-all duration-300 shadow-lg
+            ${btnStatus === "success" ? "bg-green-600" :
+            btnStatus === "error" ? "bg-red-600" :
+            loading ? "bg-gray-500 cursor-not-allowed" :
+            "bg-black hover:scale-[1.02]"}`}
+        >
+          {loading ? "Sending..." :
+           btnStatus === "success" ? "Message Sent ✓" :
+           btnStatus === "error" ? "Failed — Try Again" :
+           "Send Message"}
+        </button>
+      </form>
+    </div>
 
-              <textarea name="message" rows="5" value={form.message} onChange={handleChange} required placeholder="Your Message"
-                className="w-full px-4 py-3 rounded-lg bg-[#f5f7ff] focus:bg-white border border-transparent focus:border-black outline-none transition" />
+    {/* ================= INFO + MAP SIDE ================= */}
+    <div className="bg-[#020035] text-white p-8 md:p-8 flex flex-col gap-10">
 
-              {/* BUTTON */}
-              <button
-                type="submit"
-                disabled={loading}
-                className={`w-full py-4 rounded-xl text-white text-lg transition-all duration-300 shadow-lg
-                  ${btnStatus === "success" ? "bg-green-600" :
-                  btnStatus === "error" ? "bg-red-600" :
-                  loading ? "bg-gray-500 cursor-not-allowed" :
-                  "bg-black hover:scale-[1.02]"}`}
-              >
-                {loading ? "Sending..." :
-                 btnStatus === "success" ? "Message Sent ✓" :
-                 btnStatus === "error" ? "Failed — Try Again" :
-                 "Send Message"}
-              </button>
+      {/* Company Info */}
+      <div>
+        <h2 className="text-2xl font-semibold mb-8">Contact Information</h2>
 
-            </form>
+        <div className="space-y-2 text-gray-300">
+
+          {/* <div className="flex gap-4 items-start">
+            <FaMapMarkerAlt className="text-green-400 mt-1" />
+            <span>
+              Rajendra Nagar, Vaishali Nagar,<br/> Jaipur – 302034
+            </span>
+          </div> */}
+
+          <div className="flex gap-4 items-center">
+            <FaPhoneAlt className="text-green-400" />
+            <a href="tel:+919549964985" className="hover:text-white">
+              +91 95499 64985
+            </a>
           </div>
 
-          {/* INFO SIDE */}
-          <div className="relative bg-[#020035] text-white p-12 md:p-16 flex flex-col justify-between">
-
-            <div>
-              <h2 className="text-2xl font-semibold mb-10">Contact Information</h2>
-
-              <div className="space-y-8 text-gray-300">
-                <div className="flex gap-4 items-start">
-                  <FaMapMarkerAlt className="text-gray-400 mt-1" />
-                  <span>B004/132, Sirsi Rd, Hanuman Nagar Extension, Rajendra Nagar, Vaishali Nagar, Jaipur, Rajasthan 302021</span>
-                </div>
-                <div className="flex gap-4 items-center">
-                  <FaPhoneAlt className="text-gray-400" />
-                  <span>+91 95499 64985</span>
-                </div>
-                <div className="flex gap-4 items-center">
-                  <FaEnvelope className="text-gray-400" />
-                  <span>connect@jvsmindia.com</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Socials */}
-           <div className="flex gap-5 mt-16">
-
-  <a
-    href="https://www.linkedin.com/company/j-v-s-m-associates/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center hover:bg-[#0A66C2] transition"
-  >
-    <FaLinkedin size={18} />
-  </a>
-
-  <a
-    href="https://www.instagram.com/jvsm_associates/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center hover:bg-[#E1306C] transition"
-  >
-    <FaInstagram size={18} />
-  </a>
-
-  <a
-    href="https://www.facebook.com/profile.php?id=61586747323056"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center hover:bg-[#1877F2] transition"
-  >
-    <FaFacebookF size={18} />
-  </a>
-
-</div>
-
-
-            <div className="absolute -bottom-24 -right-24 w-64 h-64 bg-[#5b6cf2]/30 blur-[120px] rounded-full"></div>
+          <div className="flex gap-4 items-center">
+            <FaEnvelope className="text-green-400" />
+            <a href="mailto:connect@jvsmindia.com" className="hover:text-white">
+              connect@jvsmindia.com
+            </a>
           </div>
 
         </div>
       </div>
+
+      {/* Social Media */}
+      <div>
+        <p className="text-sm uppercase tracking-widest text-gray-400 ">Follow Us</p>
+        <div className="flex gap-4">
+          <a href="https://www.linkedin.com/company/j-v-s-m-associates/" target="_blank"
+            className="w-11 h-11 rounded-lg bg-white/10 flex items-center justify-center hover:bg-[#0A66C2] transition">
+            <FaLinkedin />
+          </a>
+          <a href="https://www.instagram.com/jvsm_associates/" target="_blank"
+            className="w-11 h-11 rounded-lg bg-white/10 flex items-center justify-center hover:bg-[#E1306C] transition">
+            <FaInstagram />
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61586747323056" target="_blank"
+            className="w-11 h-11 rounded-lg bg-white/10 flex items-center justify-center hover:bg-[#1877F2] transition">
+            <FaFacebookF />
+          </a>
+        </div>
+      </div>
+
+      {/* Map */}
+      <div className="rounded-2xl overflow-hidden border border-white/10 shadow-lg h-[220px]">
+        <iframe
+          src="https://www.google.com/maps?q=JVSM%20%26%20Associates%20Jaipur&output=embed"
+          className="w-full h-full"
+          loading="lazy"
+        />
+      </div>
+
+    </div>
+  </div>
+</div>
+
+      
     </section>
+ 
+
+    </>
   );
 }
