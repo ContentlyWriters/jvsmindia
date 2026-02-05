@@ -49,6 +49,14 @@ export default function ZohoPartnerSection() {
           <span className="w-2.5 h-2.5 bg-green-600 rounded-full"></span>
           <span className="text-gray-700">Ongoing Support & Optimization</span>
         </div>
+         <div className="flex items-center gap-3">
+          <span className="w-2.5 h-2.5 bg-green-600 rounded-full"></span>
+          <span className="text-gray-700">Reliable Zoho Books Setup, Support & Optimization</span>
+        </div>
+         <div className="flex items-center gap-3">
+          <span className="w-2.5 h-2.5 bg-green-600 rounded-full"></span>
+          <span className="text-gray-700">Real-Time Financial Insights</span>
+        </div>
       </div>
 
       <a
