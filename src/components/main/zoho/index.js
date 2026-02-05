@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import {Settings,SlidersHorizontal,Zap,Database,ShieldCheck,Headphones,} from "lucide-react";
 import { BarChart3, LineChart, Gauge, TrendingUp } from "lucide-react";
 import { Briefcase, Globe } from "lucide-react";
+import { Users, GitBranch } from "lucide-react";
 
 
 function useCountUp(end, duration = 2000) {
@@ -292,6 +293,21 @@ export default function JVSMConsulting() {
         title: "Support",
         desc: "Training & MIS dashboards",
         icon: Headphones,
+      },
+       {
+        title: "Automated reports",
+        desc: "Automatically generated financial reports providing real-time insights into performance, cash flow, and business health.",
+        icon: BarChart3,
+      },
+       {
+        title: "Customer and vendor portal",
+        desc: "Secure portal access for customers and vendors to track invoices, payments, statements, easily.",
+        icon: Users,
+      },
+       {
+        title: "Branch level P&L",
+        desc: "Branch-level analysis of financial results to support performance tracking and decision-making.",
+        icon: GitBranch,
       },
     ].map((service, i) => {
       const Icon = service.icon;

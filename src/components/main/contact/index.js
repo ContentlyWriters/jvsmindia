@@ -65,12 +65,12 @@ export default function ContactSection() {
 
       {/* HERO */}
       <div className="text-center pt-28 pb-44 px-6 relative z-10">
-        <h1 className="text-4xl md:text-6xl font-bold text-[#020035]">
-          Let’s Build Something Great
-        </h1>
-        <p className="text-gray-500 mt-4 max-w-2xl mx-auto">
-          Have a project in mind? Need support? Our team is ready to help you.
-        </p>
+       <h1 className="text-3xl md:text-5xl font-bold text-black leading-tight">
+  Get in Touch with Our <br />
+  <span className="text-green-600">Professional Team</span>
+</h1>
+
+       
       </div>
 
       {/* CONTACT CONTAINER */}

@@ -5,7 +5,7 @@ const industries = [
   { name: "Automobile Industry", img: "/industries/car-being-taking-care-workshop.jpg" },
   { name: "FMCG Industry", img: "/industries/cashier-grocery-store-wearing-mask-gloves-fully-protected-against-corona-virus.jpg" },
   { name: "Tech Companies", img: "/industries/multiethnic-coworkers-looking-revenue-figures-tablet-diverse-office.jpg" },
-  { name: "Fashion & Lifestyle", img: "/industries/street-fashion-look-amazing-stylish-traveling-girl-trendy-autumn-outfit-posing-outdoor.jpg" },
+  { name: "Fashion & Lifestyle", img: "/industries/street-fashion-look-amazing-stylish-traveling-girl-trendy-autumn-outfit-posing-outdoor(1).jpg" },
   { name: "Pharma Industry", img: "/industries/asian-scientists-working-vaccine-creation.jpg" },
   { name: "Media Entertainment", img: "/industries/press-reporter-fallowing-leads-case.jpg" },
   { name: "Manufacturing Industry", img: "/industries/photo-automobile-production-line-welding-car-body-modern-car-assembly-plant-auto-industry-interior-hightech-factory-modern-production.jpg" },
@@ -39,7 +39,7 @@ export default function IndustriesSection() {
   initial={{ opacity: 0, y: 40 }}
   whileInView={{ opacity: 1, y: 0 }}
   viewport={{ once: true }}
-  transition={{ duration: 0.6, delay: idx * 0.1 }}
+  transition={{ duration: 0.1, delay: idx * 0.1 }}
 >
   {/* Image */}
   <img

@@ -274,3 +274,26 @@ html {
   transform: scale(1.05);
   transition: all 0.6s ease;
 }
+
+
+/*home banner*/
+@keyframes floatAnim {
+  0%,100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+@keyframes floatAnim2 {
+  0%,100% { transform: translateY(0px); }
+  50% { transform: translateY(20px); }
+}
+.floatAnim { animation: floatAnim 6s ease-in-out infinite; }
+.floatAnim2 { animation: floatAnim2 7s ease-in-out infinite; }
+
+@keyframes graphMove {
+  0% { stroke-dashoffset: 1000; }
+  100% { stroke-dashoffset: 0; }
+}
+.animate-graph {
+  stroke-dasharray: 1000;
+  animation: graphMove 6s ease forwards;
+}
+
