@@ -26,7 +26,7 @@ function useCountUp(end, duration = 2000) {
 
 /* -------- SLIDES -------- */
 const slides = [
-  "Zoho Books and Analytics Experts",
+  "Zoho Books And Analytics Experts",
   "Pro Startup Finance Experts",
   "Tech Savvy Tech Ready CA Firm",
   "Accounting ERP Implementation Partner",
