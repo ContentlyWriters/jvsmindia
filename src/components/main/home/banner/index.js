@@ -29,8 +29,8 @@ const slides = [
   "Zoho Books and Analytics Experts",
   "Pro Startup Finance Experts",
   "Tech Savvy Tech Ready CA Firm",
-  "Accounting ERP implementation partner",
-  "cloud-Based Bookkeeping Service Provider",
+  "Accounting ERP Implementation Partner",
+  "Cloud-Based Bookkeeping Service Provider",
   "Accounting Automation Service Provider",
 ];
 
