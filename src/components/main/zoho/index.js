@@ -120,7 +120,7 @@ export default function JVSMConsulting() {
       <ellipse cx="748" cy="680" rx="700" ry="550" stroke="white" strokeOpacity="0.5" fill="none" strokeWidth="1" />
       <ellipse cx="748" cy="680" rx="180" ry="700" stroke="white" strokeOpacity="0.5" fill="none" strokeWidth="1" />
       <ellipse cx="748" cy="680" rx="550" ry="700" stroke="white" strokeOpacity="0.5" fill="none" strokeWidth="1" />
-    </svg>
+    </svg >
   </div>
 
  
