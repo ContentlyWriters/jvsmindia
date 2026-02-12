@@ -1,14 +1,8 @@
-
-# Disallow crawling
-
-
 # Allow crawling 
 Allow: /
 Allow: /blog/
 Allow: /contact
 Allow: /zoho
-
-# Disallow access to potentially private sections
 
 
 # Sitemap location for better indexing
