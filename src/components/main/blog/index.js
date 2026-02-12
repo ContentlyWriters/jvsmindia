@@ -10,8 +10,6 @@ import img1 from "@/assets/image/blogimg1.jpg";
 
 export const blogData = [
 
-
- 
   {
     tag: "blog-1",
     heading: "The Virtual CFO- Why Your 2026 Growth Strategy Needs More Than Just a Tax Filer",
