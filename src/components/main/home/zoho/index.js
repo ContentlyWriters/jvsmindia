@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 export default function ZohoPresence() {
   return (
     <section className="relative w-full py-19 pb-4 px-6 text-black overflow-hidden bg-gray-50">

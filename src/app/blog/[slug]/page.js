@@ -38,13 +38,13 @@ const blogData = [
   about: (
     <>
       <p>
-       "I thought hiring a good CA would solve everything," he told me. "But now I'm sitting here with 
+       &#34;I thought hiring a good CA would solve everything,&#34; he told me. &#34;But now I'm sitting here with 
 compliance sorted, taxes filed on time, and absolutely no idea if I'm making or losing money on 
-half my product lines." 
+half my product lines.&#34;
       </p>
 
       <p className="mt-4">
-       If you're planning to grow your business in 2026, his story highlights why {" "}
+       If you&#39;re planning to grow your business in 2026, his story highlights why {" "}
         <strong>bookkeeping services for businesses</strong>  are just the foundation, not the ceiling, of financial success.
       </p>
     </>
@@ -74,20 +74,20 @@ half my product lines."
   about: (
     <>
       <p>
-        When we dug into Rajesh's books, we found uncomfortable truths. The product line he thought 
-        was his "cash cow" was barely breaking even once we allocated marketing and warehouse 
-        costs. His bulk orders were destroying his cash flow because he was financing his clients' 
+        When we dug into Rajesh&#39;s books, we found uncomfortable truths. The product line he thought 
+        was his &#34;cash cow&#34; was barely breaking even once we allocated marketing and warehouse 
+        costs. His bulk orders were destroying his cash flow because he was financing his clients&#39;
         inventory while his own suppliers demanded immediate payment.
       </p>
 
       <p className="mt-4">
         His accountant had given him P&L statements every quarter, and everything looked fine on 
-        paper. But nobody had told him that <b>"profit" and "cash" aren't the same thing</b>. Growing too 
+        paper. But nobody had told him that <b>&#34;profit&#34; and &#34;cash&#34; aren&#39;t the same thing</b>. Growing too 
         fast can kill a business faster than not growing at all.
       </p>
 
       <p className="mt-4">
-        Six months after restructuring, Rajesh's revenue was slightly lower, but his bank balance had 
+        Six months after restructuring, Rajesh&#39;s revenue was slightly lower, but his bank balance had 
         tripled. He said it felt like someone had finally turned the lights on in a room he’d been stumbling 
         around in for years.
       </p>
@@ -99,7 +99,7 @@ half my product lines."
   about: (
     <>
       <p>
-        The term "Virtual CFO" is a 2026 buzzword, but here is the actual substance of the role:
+        The term &#34;Virtual CFO&#34; is a 2026 buzzword, but here is the actual substance of the role:
       </p>
 
       <ul className="list-disc pl-6 space-y-2">
@@ -114,7 +114,7 @@ much money you’ll have three months from now.
         </li>
 
         <li>
-         <b> Profitability Analysis:</b> We stop looking at the business as one "blob" and start 
+         <b> Profitability Analysis:</b> We stop looking at the business as one &#34;blob&#34; and start 
 measuring specific products, channels, and customer segments. 
         </li>
 
@@ -133,13 +133,13 @@ jargon.
   about: (
     <>
       <p>
-       Compliance is now "table stakes", the minimum requirement to stay in the game. It won't help 
+       Compliance is now &#34;table stakes&#34;, the minimum requirement to stay in the game. It won&#39;t help 
 you win. The businesses thriving in 2026 are those making decisions based on <strong>unit economics 
 and cash conversion cycles</strong>. 
       </p>
 
       <p className="mt-4">
-       When inflation hits or suppliers raise prices, winners don't panic; they model the scenario and 
+       When inflation hits or suppliers raise prices, winners don&#39;t panic; they model the scenario and 
 move.
       </p>
     </>
@@ -170,7 +170,7 @@ year?
       </ol>
 
       <p className="mt-4">
-       If the answer is "I'll need to check" or "That's not my area," you have a compliance person, not a 
+       If the answer is &#34;I&#39;ll need to check&#34; or &#34;That&#39;s not my area,&#34; you have a compliance person, not a 
 strategic partner.
       </p>
     </>
@@ -204,7 +204,7 @@ they talk about cash flow in the first conversation.
 
       <li>
         <strong>Red Flags:</strong>  They focus entirely on tax savings; they are significantly cheaper than 
-market rates; they don't ask about your operations.
+market rates; they don&#39;t ask about your operations.
       </li>
     </ul>
   )
@@ -214,7 +214,7 @@ market rates; they don't ask about your operations.
   about: (
     <>
       <p>
-       Your tax filer makes sure you don't break the rules. Your virtual CFO helps you win the game. 
+       Your tax filer makes sure you don&#39;t break the rules. Your virtual CFO helps you win the game. 
 Both are important, but they are not the same. At <a href="https://www.jvsmindia.com" 
     target="_blank" 
     rel="noopener noreferrer"><span className="text-green-700 underline">JVSM Associates</span></a>, we specialise in bridging 
@@ -231,7 +231,7 @@ growing business into a sustainable one.
   about: (
     <>
       <p>
-       Don't wait for a cash-flow crisis to find out whether your business is actually profitable. Click 
+       Don&#39;t wait for a cash-flow crisis to find out whether your business is actually profitable. Click 
 below to book a 15-minute diagnostic call with our expert team because every great founder 
 deserves more than just a standard chartered accountant service; they deserve a partner in 
 growth

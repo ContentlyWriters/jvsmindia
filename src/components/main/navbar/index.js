@@ -78,7 +78,7 @@ export default function NavBar() {
 
       <div className="block lg:hidden fixed top-0 left-0 w-full z-50 bg-white/95 backdrop-blur-lg shadow-md border-b border-gray-200">
         <div className="flex justify-between items-center px-4 h-14 ">
-          <a href="/">
+          <Link href="/">
           <Image
             src="/jvsmindialogo.png"
             alt="Logo"
@@ -86,7 +86,7 @@ export default function NavBar() {
             height={36}
             className="h-28 w-auto mt-2"
           />
-          </a>
+          </Link>
           <SmallNavbar items={items} />
         </div>
       </div>

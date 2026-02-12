@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import { Mail, Phone, Linkedin } from "lucide-react";
 
 export default function FoundersSection() {
@@ -52,7 +52,7 @@ export default function FoundersSection() {
           >
        
             <div className="bg-gray-100">
-              <img
+              <Image
                 src={f.img}
                 alt={f.name}
                 className="w-full h-[420px] object-fill"
