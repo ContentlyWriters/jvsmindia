@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 const industries = [
@@ -42,7 +43,7 @@ export default function IndustriesSection() {
   transition={{ duration: 0.01, delay: idx * 0.1 }}
 >
  
-  <img
+  <Image
     src={industry.img}
     alt={industry.name}
     className="w-full h-64 object-cover md:h-72 lg:h-64"

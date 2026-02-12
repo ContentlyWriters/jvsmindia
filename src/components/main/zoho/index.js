@@ -243,7 +243,7 @@ export default function JVSMConsulting() {
 
 <div className="text-center mb-6 relative z-10 flex justify-center">
   <div className="flex items-center gap-3 bg-white border border-slate-200 shadow-sm px-5 py-2 rounded-full">
-    <img
+   <Image
       src="/zoho/zohobooks-logo-wb.png"
       alt="Zoho Partner"
       className="h-12 w-auto object-contain"
@@ -346,7 +346,7 @@ export default function JVSMConsulting() {
 
 <div className="text-center mb-6 relative z-10 flex justify-center">
   <div className="flex items-center gap-3 bg-white border border-slate-200 shadow-sm px-5 py-2 rounded-full">
-    <img
+    <Image
       src="/zoho/zoho-analytics.png"
       alt="Zoho Partner"
       className="h-12 w-auto object-contain"

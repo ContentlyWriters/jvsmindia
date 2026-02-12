@@ -1,5 +1,5 @@
 "use client";
-
+import Link from "next/link";
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
@@ -58,7 +58,7 @@ export default function NavBar() {
         >
         
           <div className="flex items-center gap-3 mt-1">
-            <a href="/">
+            <Link href="/">
             <Image
               src="/jvsmindialogo.png"
               alt="JVSMINDIA Logo"
@@ -67,7 +67,7 @@ export default function NavBar() {
               className="h-32 w-auto object-contain"
               priority
             />
-            </a>
+            </Link>
           </div>
 
       
