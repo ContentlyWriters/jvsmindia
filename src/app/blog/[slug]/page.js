@@ -38,8 +38,8 @@ const blogData = [
   about: (
     <>
       <p>
-       &#34;I thought hiring a good CA would solve everything,&#34; he told me. &#34;But now I'm sitting here with 
-compliance sorted, taxes filed on time, and absolutely no idea if I'm making or losing money on 
+       &#34;I thought hiring a good CA would solve everything,&#34; he told me. &#34;But now I&#39;m sitting here with 
+compliance sorted, taxes filed on time, and absolutely no idea if I&#39;m making or losing money on 
 half my product lines.&#34;
       </p>
 
