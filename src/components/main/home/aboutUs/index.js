@@ -33,7 +33,7 @@ export default function FoundersSection() {
             role: "Chartered Accountant",
             img: "/founders/vivek_jain.png",
             email: "vivek.sharma@jvsmindia.com",
-            phone: "+91 73000 69605",
+            phone: "+91 83870 17043 ",
             linkedin: "https://www.linkedin.com/in/vivek-sharma-462012194",
           },
          
