@@ -9,7 +9,8 @@
     "baseColor": "slate",
     "cssVariables": true,
     "prefix": ""
-  },
+  }, 
+  
   "aliases": {
     "components": "@/components",
     "utils": "@/lib/utils"
