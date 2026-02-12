@@ -11,7 +11,7 @@ export default function Portal({ children }) {
     setMounted(true);
   }, []);
 
-  if (!mounted) return null; // server side pe render na ho
+  if (!mounted) return null; 
 
   return createPortal(children, document.body);
 }

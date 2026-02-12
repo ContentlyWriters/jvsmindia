@@ -4,7 +4,7 @@ import { blogData } from "@/components/main/blog";
 import { useEffect, useState } from "react";
 
 export default function BlogNotification() {
-  const [mounted, setMounted] = useState(false); // flash fix
+  const [mounted, setMounted] = useState(false); 
   const [index, setIndex] = useState(0);
   const [show, setShow] = useState(true);
 
@@ -14,7 +14,7 @@ export default function BlogNotification() {
   const blogsToShow = sortedBlogs.slice(0, 3);
 
   useEffect(() => {
-    setMounted(true); // allow render only after mount
+    setMounted(true); 
   }, []);
 
   useEffect(() => {
@@ -42,8 +42,8 @@ export default function BlogNotification() {
       <div className="
         relative
         backdrop-blur-2xl
-        bg-white/85
-        border border-white/50
+        bg-white/95
+        border border-black/30
         text-gray-900
         p-4 sm:p-5
         rounded-2xl
@@ -53,30 +53,30 @@ export default function BlogNotification() {
         hover:shadow-[0_10px_35px_rgba(0,0,0,0.15)]
       ">
 
-        {/* Close */}
+      
         <button
           onClick={(e) => {
             e.preventDefault();
             e.stopPropagation();
             setShow(false);
           }}
-          className="absolute top-2 right-3 text-gray-400 hover:text-gray-700 text-sm"
+          className="absolute top-2 right-3 text-gray-700 hover:text-black text-sm"
         >
           ✕
         </button>
 
-        {/* Small label */}
+  
         <p className="text-[11px] font-semibold text-gray-500 tracking-wide mb-1">
           NEW BLOG UPDATE
         </p>
 
-        {/* Title */}
+       
         <h4 className="text-[14px] sm:text-sm font-semibold leading-snug mb-2">
           {blog.heading}
         </h4>
 
-        {/* Action */}
-        <span className="text-[13px] font-medium text-blue-600">
+  
+        <span className="text-[13px] font-medium text-green-700">
           Read Now →
         </span>
       </div>

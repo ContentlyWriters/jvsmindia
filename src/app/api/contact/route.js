@@ -9,7 +9,7 @@ const sendResponse = (message, code = 200, extra = {}) => {
 
 export async function POST(req) {
   try {
-    await connect(); // DB connect
+    await connect(); 
 
     const { name, email, subject, message } = await req.json();
 
@@ -17,7 +17,6 @@ export async function POST(req) {
       return sendResponse("Name, email, and message are required", 400);
     }
 
-    // 1️⃣ Save in DB
     const newMessage = new Contact({
       name,
       email,
@@ -26,18 +25,16 @@ export async function POST(req) {
     });
     await newMessage.save();
 
-    // 2️⃣ Mail transporter
     const transporter = nodemailer.createTransport({
       host: "smtp.gmail.com",
       port: 465,
-      secure: true, // true for port 465
+      secure: true, 
       auth: {
         user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS, // must be Gmail App Password
+        pass: process.env.EMAIL_PASS,
       },
     });
 
-    // 3️⃣ Send email
    const info = await transporter.sendMail({
   from: `"JVSMINDIA Enquiry Desk" <${process.env.EMAIL_USER}>`,
   to: process.env.EMAIL_USER,

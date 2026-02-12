@@ -17,28 +17,28 @@ const features = [
     icon: Cloud,
     title: "CLOUD BASED BOOKKEEPING SERVICES ",
     desc: "We deliver secure, cloud-based bookkeeping with automated accounting processes to ensure accurate records, real-time financial visibility, and streamlined compliance—so you can focus on growing your business.",
-    color: "from-sky-500 to-cyan-500",   // cloud + tech
+    color: "from-sky-500 to-cyan-500",  
   },
    {
     id:2,
     icon: Rocket,
     title: "STARTUP SETUP AND CONSULTANCY",
     desc: "We support startups from day one with entity formation, DPIIT registration, statutory license registrations, and expert consultancy on deal structuring and ESOPs.",
-    color: "from-violet-600 to-indigo-500",   // growth acceleration
+    color: "from-violet-600 to-indigo-500",   
   },
   { id:3,
     icon: TrendingUp,
     title: "VIRTUAL CFO SERVICES",
-    desc: "Our Virtual CFO services provide strategic financial leadership to help your business grow with confidence. We assist with business plan development, accurate budgeting and financial projections, investor and MIS reporting, banking relationships, CMA data preparation, and regulatory liaison. With expert guidance in decision-making, risk assessment, accounting oversight, and team management, we act as your trusted financial partner.",
-    color: "from-indigo-600 to-blue-500",   // growth + trust
+    desc: "Our Virtual CFO services provide strategic financial leadership that helps businesses grow with confidence and clarity. We act as an extension of your leadership team, delivering senior-level insights that strengthen financial planning, governance, and decision-making.",
+    color: "from-indigo-600 to-blue-500", 
   },
  
  
   { id:4,
     icon: Scale,
-    title: "TAX AND REGULATORY SERVICES ",
+    title: "Tax, Regulatory, and FEMA Compliance Service",
     desc: "We provide end-to-end tax and regulatory support covering corporate and individual taxation, GST, PF, ESIC, FEMA compliance, and tax representation with litigation support.",
-    color: "from-emerald-600 to-green-500",   // money + balance
+    color: "from-emerald-600 to-green-500",  
   },
    {id:5,
     icon: Users,
@@ -50,13 +50,13 @@ const features = [
     icon: ClipboardCheck,
     title: "AUDIT AND ASSURANCE SERVICES ",
     desc: "We provide independent and reliable audit services including statutory audit, internal audit, GST audit, operational audit, and management audit to ensure compliance and strengthen governance.",
-    color: "from-amber-500 to-yellow-500",   // support + attention
+    color: "from-amber-500 to-yellow-500",   
   },
   { id:7,
     icon: SearchCheck,
     title: "DUE DILIGENCE SERVICES",
     desc: "We provide comprehensive financial due diligence  service to assess a company’s performance and financial position, helping stakeholders make confident, well-informed decisions.",
-    color: "from-slate-600 to-gray-500",   // reliability + trust
+    color: "from-slate-600 to-gray-500",  
   },
    { id:8,
     icon: Landmark,
@@ -76,25 +76,25 @@ const features = [
 export default function ExpertiseShowcase() {
   useEffect(() => {
   const handleHash = () => {
-    const hash = window.location.hash; // #service-3
+    const hash = window.location.hash; 
     if (!hash.startsWith("#service-")) return;
 
     const el = document.querySelector(hash);
     if (!el) return;
 
-    // Navbar height adjust
+  
     const yOffset = -110;
     const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
     window.scrollTo({ top: y, behavior: "smooth" });
 
-    // Glow active card
+   
     const id = Number(hash.replace("#service-", ""));
     setActive(id - 1);
   };
 
-  handleHash(); // page load
-  window.addEventListener("hashchange", handleHash); // dropdown click
+  handleHash(); 
+  window.addEventListener("hashchange", handleHash); 
 
   return () => window.removeEventListener("hashchange", handleHash);
 }, []);
@@ -110,7 +110,7 @@ export default function ExpertiseShowcase() {
 
       <div className="relative max-w-7xl mx-auto">
         
-        {/* Heading */}
+      
         <motion.h2
           initial={{ opacity: 0, y: -40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -121,7 +121,7 @@ export default function ExpertiseShowcase() {
           Our Expertise
         </motion.h2>
 
-        {/* Grid */}
+   
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
           {features.map((feature, index) => {
             const Icon = feature.icon;
@@ -143,24 +143,24 @@ export default function ExpertiseShowcase() {
                     active !== null ? "opacity-60 scale-[0.98]" : "bg-white/80 border-gray-200"
                   }`}
               >
-                {/* Glow Border Effect */}
+               
                 {isActive && (
                   <div className="absolute inset-0 rounded-2xl border-2 border-gray-400 animate-pulse pointer-events-none"></div>
                 )}
 
-                {/* Icon */}
+           
                 <div className={`flex items-center justify-center w-16 h-16 mb-6 rounded-xl bg-gradient-to-r ${feature.color} transition
                   ${isActive ? "shadow-[0_0_25px_rgba(0,0,0,0.1)] scale-110" : ""}`}>
                   <Icon className="w-8 h-8 text-white" />
                 </div>
 
-                {/* Title */}
+              
                 <h3 className={`text-xl font-bold mb-3 transition text-black
                   ${isActive ? "text-black drop-shadow-[0_0_6px_rgba(255,255,255,255.8)]" : ""}`}>
                   {feature.title}
                 </h3>
 
-                {/* Description */}
+             
                 <p className={`text-sm leading-relaxed transition
                   ${isActive ? "text-gray-900" : "text-gray-700"}`}>
                   {feature.desc}

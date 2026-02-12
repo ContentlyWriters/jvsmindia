@@ -9,12 +9,12 @@ export default function SmallNavbar({ items }) {
 
   return (
     <div>
-      {/* MENU BUTTON */}
+   
       <button onClick={() => setOpen(!open)} className="text-2xl">
         ☰
       </button>
 
-      {/* MOBILE MENU */}
+    
       {open && (
         <div className="absolute top-14 left-0 w-full bg-white shadow-xl border-t border-gray-200 z-50">
           <div className="flex flex-col p-5 gap-2">
@@ -22,7 +22,7 @@ export default function SmallNavbar({ items }) {
             {items.map((item) => {
               const hasDropdown = !!item.dropdown;
 
-              // NORMAL LINK
+         
               if (!hasDropdown) {
                 return (
                   <Link
@@ -36,7 +36,7 @@ export default function SmallNavbar({ items }) {
                 );
               }
 
-              // DROPDOWN ITEM
+           
               return (
                 <div key={item.id} className="flex flex-col">
                   <button

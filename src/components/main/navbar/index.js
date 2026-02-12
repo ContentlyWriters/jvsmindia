@@ -8,9 +8,9 @@ import SmallNavbar from "./small-navbar";
 
 const items = [
   { id: 1, name: "Home", path: "/" },
-
+  { id: 2, name: "About Us", path: "/#aboutus" },
   {
-    id: 2,
+    id: 3,
     name: "Services",
     dropdown: [
       { name: "Cloud Based Bookkeeping Services", path: "/#service-1" },
@@ -23,9 +23,7 @@ const items = [
       { name: "SME Financing & Fundraising", path: "/#service-8" },
       { name: "Secretarial Services", path: "/#service-9" },
     ],
-  },
-
-  { id: 3, name: "About Us", path: "/#aboutus" },
+  }, 
   { id: 4, name: "Industries", path: "/#Industries" },
   { id: 5, name: "Blog", path: "/blog" },
   { id: 6, name: "Contact", path: "/contact" },
@@ -45,7 +43,7 @@ export default function NavBar() {
 
   return (
     <>
-      {/* 🔹 Large Screen Navbar */}
+    
       <div
         className={`hidden lg:block fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
           isScrolled
@@ -58,8 +56,9 @@ export default function NavBar() {
             isScrolled ? "h-14" : "h-14"
           }`}
         >
-          {/* Logo */}
+        
           <div className="flex items-center gap-3 mt-1">
+            <a href="/">
             <Image
               src="/jvsmindialogo.png"
               alt="JVSMINDIA Logo"
@@ -68,16 +67,18 @@ export default function NavBar() {
               className="h-32 w-auto object-contain"
               priority
             />
+            </a>
           </div>
 
-          {/* Nav Links */}
+      
           <LargeNavbar items={items} currentPath={pathname} />
         </div>
       </div>
 
-      {/* 🔹 Small Screen Navbar */}
+
       <div className="block lg:hidden fixed top-0 left-0 w-full z-50 bg-white/95 backdrop-blur-lg shadow-md border-b border-gray-200">
         <div className="flex justify-between items-center px-4 h-14 ">
+          <a href="/">
           <Image
             src="/jvsmindialogo.png"
             alt="Logo"
@@ -85,6 +86,7 @@ export default function NavBar() {
             height={36}
             className="h-28 w-auto mt-2"
           />
+          </a>
           <SmallNavbar items={items} />
         </div>
       </div>

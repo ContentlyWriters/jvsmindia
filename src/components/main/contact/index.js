@@ -59,11 +59,11 @@ export default function ContactSection() {
     <>
     <section className="relative bg-gradient-to-br from-[#f9fbff] via-white to-[#eef1ff] overflow-hidden">
 
-      {/* Decorative Blobs */}
+     
       <div className="absolute -top-40 -left-40 w-[500px] h-[500px] bg-green-500/20 blur-[100px] rounded-full"></div>
       <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-purple-400/20 blur-[120px] rounded-full"></div>
 
-      {/* HERO */}
+   
       <div className="text-center pt-28 pb-44 px-6 relative z-10">
        <h1 className="text-3xl md:text-5xl font-bold text-black leading-tight">
   Get in Touch with Our <br />
@@ -73,12 +73,11 @@ export default function ContactSection() {
        
       </div>
 
-      {/* CONTACT CONTAINER */}
-    {/* CONTACT CONTAINER */}
-<div className="max-w-6xl mx-auto -mt-32 mb-24 relative z-20">
+  
+<div className="max-w-6xl px-2 mx-auto -mt-32 mb-24 relative z-20">
   <div className="grid md:grid-cols-2 rounded-3xl shadow-[0_40px_100px_rgba(0,0,0,0.12)] overflow-hidden">
 
-    {/* ================= FORM SIDE ================= */}
+ 
     <div className="bg-white p-12 md:p-16">
       <h2 className="text-2xl font-semibold text-[#020035] mb-10">
         Send a Message
@@ -115,21 +114,16 @@ export default function ContactSection() {
       </form>
     </div>
 
-    {/* ================= INFO + MAP SIDE ================= */}
+   
     <div className="bg-[#020035] text-white p-8 md:p-8 flex flex-col gap-10">
 
-      {/* Company Info */}
+   
       <div>
         <h2 className="text-2xl font-semibold mb-8">Contact Information</h2>
 
         <div className="space-y-2 text-gray-300">
 
-          {/* <div className="flex gap-4 items-start">
-            <FaMapMarkerAlt className="text-green-400 mt-1" />
-            <span>
-              Rajendra Nagar, Vaishali Nagar,<br/> Jaipur – 302034
-            </span>
-          </div> */}
+       
 
           <div className="flex gap-4 items-center">
             <FaPhoneAlt className="text-green-400" />
@@ -148,7 +142,7 @@ export default function ContactSection() {
         </div>
       </div>
 
-      {/* Social Media */}
+   
       <div>
         <p className="text-sm uppercase tracking-widest text-gray-400 ">Follow Us</p>
         <div className="flex gap-4">

@@ -29,7 +29,7 @@ export default function IndustriesSection() {
           We serve diverse industries with tailor-made solutions for maximum impact.
         </p>
 
-        {/* Masonry / staggered grid */}
+     
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {industries.map((industry, idx) => (
            <motion.div
@@ -39,21 +39,21 @@ export default function IndustriesSection() {
   initial={{ opacity: 0, y: 40 }}
   whileInView={{ opacity: 1, y: 0 }}
   viewport={{ once: true }}
-  transition={{ duration: 0.1, delay: idx * 0.1 }}
+  transition={{ duration: 0.01, delay: idx * 0.1 }}
 >
-  {/* Image */}
+ 
   <img
     src={industry.img}
     alt={industry.name}
     className="w-full h-64 object-cover md:h-72 lg:h-64"
   />
 
-  {/* 🔹 Default Bottom Name (Visible Normally) */}
+
   <div className="absolute bottom-0 left-0 w-full bg-black text-white text-sm md:text-base font-sm py-1 px-2 transition-opacity duration-300 group-hover:opacity-0">
     {industry.name}
   </div>
 
-  {/* 🔹 Hover Overlay (Existing Style) */}
+
   <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
     <h3 className="text-white text-xl md:text-2xl font-bold text-center px-4">
       {industry.name}
@@ -65,7 +65,7 @@ export default function IndustriesSection() {
         </div>
       </div>
 
-      {/* Floating background shapes */}
+  
       <motion.div
         className="absolute top-[-100px] left-[-80px] w-96 h-96 rounded-full bg-indigo-200/20 animate-pulse -z-10"
         animate={{ scale: [1, 1.1, 1] }}

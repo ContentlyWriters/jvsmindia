@@ -6,18 +6,18 @@ export default function FoundersSection() {
   return (
     <section id="aboutus" className="bg-gray-50 text-gray-900 py-20 px-6">
       
-      {/* Heading */}
+   
       <div className="text-center mb-16">
         <p className="text-green-700 tracking-[4px] text-sm mb-3 uppercase">
           About Us
         </p>
-        <h2 className="text-5xl font-bold">Meet Our Founders</h2>
+        <h2 className="text-5xl font-bold">Meet our Partners</h2>
       </div>
 
-      {/* Grid */}
+  
       <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-10">
 
-        {/* Founder Card */}
+       
         {[
            {
             name: "CA Vikas Jain",
@@ -50,7 +50,7 @@ export default function FoundersSection() {
             key={i}
             className="bg-white border border-gray-200 rounded-2xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden"
           >
-            {/* Image */}
+       
             <div className="bg-gray-100">
               <img
                 src={f.img}
@@ -59,7 +59,7 @@ export default function FoundersSection() {
               />
             </div>
 
-            {/* Info */}
+          
             <div className="p-6 text-left">
               <h3 className="text-2xl font-bold">{f.name}</h3>
               <p className="text-gray-600 mb-4">{f.role}</p>

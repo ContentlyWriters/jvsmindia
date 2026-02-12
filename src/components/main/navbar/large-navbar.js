@@ -19,7 +19,7 @@ export default function LargeNavbar({ items, currentPath }) {
             onMouseEnter={() => setOpen(item.name)}
             onMouseLeave={() => setOpen(null)}
           >
-            {/* NORMAL LINK */}
+         
             {!hasDropdown && (
               <Link
                 href={item.path}
@@ -38,7 +38,7 @@ export default function LargeNavbar({ items, currentPath }) {
               </Link>
             )}
 
-            {/* DROPDOWN LINK */}
+      
             {hasDropdown && (
               <>
                 <button className="flex items-center gap-1 text-gray-700 hover:text-green-700 transition relative group">
@@ -48,7 +48,7 @@ export default function LargeNavbar({ items, currentPath }) {
                   <span className="absolute left-0 -bottom-1 h-[2px] bg-green-700 w-0 group-hover:w-full transition-all duration-300"></span>
                 </button>
 
-                {/* DROPDOWN BOX */}
+             
                 <div
                   className={`absolute left-1/2 -translate-x-1/2 mt-4 w-[320px] bg-white border border-gray-200 rounded-xl shadow-xl py-2 transition-all duration-300 z-50
                   ${

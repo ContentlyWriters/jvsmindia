@@ -4,10 +4,10 @@ export default function ZohoPresence() {
   return (
     <section className="relative w-full py-19 pb-4 px-6 text-black overflow-hidden bg-gray-50">
 
-      {/* Background Light Glow */}
+ 
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-indigo-500/10 blur-[140px] -z-10"></div>
 
-      {/* ===== TITLE ===== */}
+   
       <div className="text-center mb-24">
         <p className="text-green-700 tracking-[4px] text-sm mb-3 uppercase">
           Official Presence
@@ -19,22 +19,20 @@ export default function ZohoPresence() {
 
       <div className="max-w-7xl mx-auto space-y-28">
 
-        {/* ===== MAIN BILLBOARD ===== */}
+    
         <div className="relative">
 
-          {/* Poles */}
+ 
           <div className="hidden md:block absolute -bottom-20 left-[22%] w-5 h-40 bg-gradient-to-b from-gray-400 to-gray-800 rounded shadow-xl"></div>
           <div className="hidden md:block absolute -bottom-20 right-[22%] w-5 h-40 bg-gradient-to-b from-gray-400 to-gray-800 rounded shadow-xl"></div>
 
-          {/* Metallic Frame */}
+ 
           <div className="p-[6px] rounded-xl bg-gradient-to-b from-gray-300 via-gray-500 to-gray-700 shadow-[0_30px_80px_rgba(0,0,0,0.8)]">
 
-            {/* Inner Dark Mount */}
             <div className="bg-black p-4 rounded-lg border border-gray-700">
 
               <div className="relative rounded-md overflow-hidden">
 
-                {/* Light Reflection */}
                 <div className="absolute top-0 left-0 w-full h-20 bg-white/10 blur-xl"></div>
 
                 <img
@@ -45,12 +43,9 @@ export default function ZohoPresence() {
             </div>
           </div>
 
-          {/* <p className="text-center mt-8 text-gray-400 tracking-wider text-lg">
-            Trusted Zoho Partner Recognition
-          </p> */}
         </div>
 
-        {/* ===== LOCATION BANNERS ===== */}
+        
         <div className="grid md:grid-cols-3 gap-16">
 
           {[
@@ -60,7 +55,7 @@ export default function ZohoPresence() {
           ].map((item, i) => (
             <div key={i} className="relative group">
 
-              {/* Small Billboard Frame */}
+        
               <div className="p-[5px] rounded-lg bg-gradient-to-b from-gray-400 via-gray-600 to-gray-800 shadow-[0_15px_50px_rgba(0,0,0,0.7)] group-hover:scale-[1.03] transition">
 
                 <div className="bg-black p-3 rounded border border-gray-700">
