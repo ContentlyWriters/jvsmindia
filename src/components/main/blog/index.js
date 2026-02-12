@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { useState } from "react";
-import img1 from "@/assets/image/blogimg1.jpg";
+import img1 from "@/assets/blog/image1.jpg";
 
 
 
