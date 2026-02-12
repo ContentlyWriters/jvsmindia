@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Head from "next/head";
 import { notFound } from "next/navigation";
-import img1 from "@/assets/image/BlogImg1.jpg";
+import img1 from "@/assets/image/blogimg1.jpg";
 
 
 
