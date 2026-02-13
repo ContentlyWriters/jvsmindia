@@ -53,6 +53,8 @@ export default function FoundersSection() {
        
             <div className="bg-gray-100">
               <Image
+                width={500}
+  height={500}
                 src={f.img}
                 alt={f.name}
                 className="w-full h-[420px] object-fill"

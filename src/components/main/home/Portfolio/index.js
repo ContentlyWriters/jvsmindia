@@ -44,6 +44,8 @@ export default function IndustriesSection() {
 >
  
   <Image
+  width={500}
+  height={500}
     src={industry.img}
     alt={industry.name}
     className="w-full h-64 object-cover md:h-72 lg:h-64"

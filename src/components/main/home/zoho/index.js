@@ -36,6 +36,8 @@ export default function ZohoPresence() {
                 <div className="absolute top-0 left-0 w-full h-20 bg-white/10 blur-xl"></div>
 
                 <Image
+                  width={500}
+  height={500}
                   src="/banners/trust_zoho.jpg"
                   className="w-full h-[440px] object-contain bg-black"
                 />
@@ -62,6 +64,8 @@ export default function ZohoPresence() {
                   <div className="relative rounded overflow-hidden">
                     <div className="absolute top-0 left-0 w-full h-10 bg-white/10 blur-md"></div>
                     <Image
+                      width={500}
+  height={500}
                       src={item.img}
                       className="h-[240px] w-full object-cover"
                     />
